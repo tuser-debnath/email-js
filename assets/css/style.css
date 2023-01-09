@@ -1,0 +1,367 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap");
+
+/* Basic CSS */
+body {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+}
+.section-heading h3 {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+}
+.section-heading h2 {
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -1px;
+  color: #391400;
+}
+.section-heading p {
+  color: rgba(255, 255, 255, 0.64);
+}
+/* Header Area Css Start */
+.header-area {
+  background-color: #1e1e1e;
+  padding: 15px 0;
+}
+.header-area .navbar {
+  padding: 0;
+}
+
+.header-area .nav-link,
+.header-area .nav-link.active {
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+}
+.header-area .nav-link:hover {
+  color: #ef6d58;
+}
+
+.header-area .nav-item {
+  margin: 0 35px;
+}
+.header-area .nav-item:last-child {
+  margin-right: 0;
+}
+
+.header-area .nav-item:last-child a {
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.header-area .nav-item:last-child .nav-link:hover {
+  border: 1px solid #ef6d58;
+}
+
+.header-area .navbar i {
+  font-size: 25px;
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .header-area .nav-item {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-area .nav-item {
+    margin: 5px 0;
+  }
+  .header-area .navbar-toggler {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+/* Hero Area Css Start */
+
+.hero-area {
+  background-color: #1e1e1e;
+  min-height: calc(100vh - 88px);
+  padding: 80px 0;
+}
+
+.hero-text h3 {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+}
+
+.hero-text h2 {
+  font-weight: 800;
+  font-size: 72px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.64);
+  margin-bottom: 0;
+  margin: 5px 0 20px 0;
+}
+
+.hero-text a {
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #ef6d58;
+  border-radius: 6px;
+}
+
+@media (max-width: 1199px) {
+  .hero-text h2 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 60px 0;
+  }
+  .hero-text {
+    margin-bottom: 30px;
+  }
+  .hero-text h2 {
+    font-size: 42px;
+  }
+}
+
+/* Services Area CSS */
+.service-area {
+  padding: 80px 0;
+  background-color: #fdf0e9;
+}
+
+.single-services {
+  padding: 50px 60px 50px 30px;
+  border: 1px solid #f5d5c3;
+}
+
+.service-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.service-one {
+  border-radius: 6px 0 0 6px;
+}
+.service-two {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.service-heading i {
+  font-size: 25px;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  background-color: #ef6d58;
+}
+
+.service-heading h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #391400;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.service-text p {
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 20px;
+}
+
+.service-text a {
+  color: #391400;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-left: 70px;
+  padding-top: 15px;
+}
+
+.service-text a::before {
+  position: absolute;
+  content: "\2b";
+  font-size: 40px;
+  color: #ef6d58;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.more-services {
+  margin-top: 70px;
+}
+
+.more-services a {
+  color: #391400;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+@media (max-width: 991px) {
+  .service-two {
+    margin-top: 30px;
+    border-left: 1px solid #f5d5c3;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-services {
+    padding: 30px 25px 30px 15px;
+  }
+  .section-heading h2 {
+    font-size: 36px;
+  }
+}
+/* Contact Area Css */
+.contact-area {
+  padding: 80px 0;
+  background-color: #1e1e1e;
+}
+.contact-area .section-heading {
+  margin-bottom: 0;
+}
+.contact-form {
+  padding: 30px;
+  background-color: #fff;
+}
+.contact-form h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #391400;
+  margin-bottom: 25px;
+}
+
+.contact-form button {
+  background-color: #ef6d58;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  display: block;
+}
+
+.contact-form button:hover {
+  color: #fff;
+  background-color: #ef6d58;
+}
+.contact-area .form-control {
+  height: 50px;
+  border-color: #f5d5c3;
+}
+.contact-area textarea.form-control {
+  height: 150px;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact-text ul {
+  margin: 0;
+  padding: 0;
+}
+.contact-text ul li {
+  margin: 15px 0;
+}
+.contact-text ul li i {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ef6d58;
+}
+
+.contact-text ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .contact-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .footer-text p {
+    font-size: 15px;
+  }
+}
+
+/* Footer Css Start */
+.footer-area {
+  padding: 30px 0;
+  background-color: #fdf0e9;
+}
+
+.footer-text p {
+  margin: 0;
+}
+.footer-links ul {
+  list-style: none;
+  text-align: right;
+  margin-bottom: 0;
+}
+.footer-links ul li {
+  display: inline-block;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #391400;
+}
+.footer-links ul li:last-child a {
+  padding-left: 50px;
+}
+@media (max-width: 991px) {
+  .footer-text p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-links ul {
+    text-align: center;
+  }
+}

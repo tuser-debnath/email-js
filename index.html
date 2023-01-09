@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - Personal</title>
+    <script
+      src="https://kit.fontawesome.com/4f254b4b0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("7PqATduA0kVqa9ePn");
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header class="header-area">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Area Start -->
+    <main class="main-area">
+      <!-- Hero Area Start -->
+      <section class="hero-area">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-5">
+              <div class="hero-text">
+                <h3>Gabriel Pires</h3>
+                <h2>The Simple, Clean Design</h2>
+                <p>
+                  Agency provides a full service range including technical
+                  skills, design, business understanding.
+                </p>
+                <a href="#">See My Work</a>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <div class="hero-image">
+                <img class="w-100" src="assets/images/hero-bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Area Start -->
+      <section class="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+              <div class="section-heading text-center">
+                <h3>Service</h3>
+                <h2>How I Can Help You With</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-0">
+            <div class="col-lg-6">
+              <div class="single-services service-one">
+                <div class="service-heading">
+                  <i class="fa-solid fa-desktop"></i>
+                  <h3>Design</h3>
+                </div>
+                <div class="service-text">
+                  <p>
+                    Agency is a business you hire to outsource your digital
+                    marketing efforts, instead of handling in-house.
+                  </p>
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="single-services service-two">
+                <div class="service-heading">
+                  <i class="fa-sharp fa-solid fa-briefcase"></i>
+                  <h3>Development</h3>
+                </div>
+                <div class="service-text">
+                  <p>
+                    Hire to outsource your digital marketing efforts, instead of
+                    handling in-house can provide your business.
+                  </p>
+                  <a href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="more-services text-center">
+                <p>Want more service? <a href="#">Explore Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact-form">
+                <h3>Get In Touch</h3>
+                <input
+                  type="text"
+                  id="contactName"
+                  placeholder="Full Name"
+                  class="form-control mb-3"
+                />
+                <input
+                  type="emial"
+                  id="contactEmail"
+                  placeholder="Email Address"
+                  class="form-control mb-3"
+                />
+                <textarea
+                  id="contactMessage"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
+                <div id="error-text" class="mt-4"></div>
+                <div id="form-data" class="mt-4"></div>
+                <button type="button" id="submitButton" class="btn ms-auto">
+                  Submit Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 offset-lg-1 col-md-8 offset-md-2 d-flex align-items-center"
+            >
+              <div class="contact-text">
+                <div class="section-heading">
+                  <h3>Contact</h3>
+                  <h2 class="text-white">Contact Me</h2>
+                  <p>
+                    A digital agency is a business you hire to outsource your
+                    digital marketing efforts, instead of handling in-house.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-house"></i>2247 Lunetta Street,
+                        TX 76301</a
+                      >
+                    </li>
+                    <li>
+                      <a href="tel:+1 (234) 567-89-00"
+                        ><i class="fa-solid fa-house"></i>+1 (234) 567-89-00</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mailto:info@agency.com"
+                        ><i class="fa-solid fa-house"></i>info@agency.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-1 order-2">
+            <div class="footer-text">
+              <p>Copyright © 2022 Laaqiq. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-2">
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
